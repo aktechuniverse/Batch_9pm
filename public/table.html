@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #password+div{
+            display: none;
+        }
+        #password:focus+div{
+            display: block;
+            color: green;
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>user name</dt>
+        <dd><input type="text"></dd>
+        <dt>password</dt>
+        <dd><input type="password" id="password">
+        <div>password 4-20 chars with atleast one uppercase letter.</div>
+        </dd>
+        
+    </dl>
+    <button>login</button>
+</body>
+</html>

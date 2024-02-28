@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopper</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            font-family: Arial;
+            font-size: 20px;
+            padding: 20px;
+        }
+        .header-title{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        header span{
+            margin-right: 20px;
+        }
+        article{
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .bi-lightning-fill{
+            color: goldenrod;
+        }
+        .women{
+            background-image: url("images/women.jpg");
+            background-size: cover;
+        }
+        .men{
+            background-image: url("images/men.jpg");
+            background-size: cover;
+        }
+        .kids{
+            background-image: url("images/kisd.jpg");
+            background-size: cover;
+        }
+        .women, .men, .kids{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+        }
+        .men:hover{
+            opacity: 0.7;
+        }.women:hover{
+            opacity: 0.7;
+        }
+        .kids:hover{
+            opacity: 0.7;
+        }
+        .title{
+            font-size: 50px;
+            color: white;
+            text-shadow: 2px 2px 2px gray;
+            font-weight: bold;
+        }
+        main{
+            height: 500px;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            margin-top: 20px;
+        }
+        .feaatures{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            margin-top: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-family: Arial; 
+                
+        }
+        section{
+            height: 550px;
+        }
+        .f-title{
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .f-title span{
+            color: red;
+            margin-right: 15px;
+        }
+        .main-title{
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: arial;
+        }
+        .main-title-one{
+            font-size: 15px;
+            margin-bottom: 20px;
+            color: gray;
+        }
+        .main-title-two{
+            font-size: 40px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .main-title-three{
+            color: gray;
+            font-size: 15px;
+        }
+        .banner-row-1{
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+            height: 400px;
+        }
+        .banner-row-1-left{
+            background-image: url("images/women1.jpg");
+            background-size: cover;
+            margin-left: 80px;
+        }
+        .banner-row-1-right{
+            background-image: url("images/bagman.jpg");
+            background-size: cover;
+            margin-left: 20px;
+            margin-right: 20px;
+            position: relative;
+        }
+        .offer{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background-color: lightcoral;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 80px;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><span class="header-title">Shopper.</span></div>
+        <div>
+            <nav>
+                <span><a href="#Home">Home</a></span>
+                <span>Cataog</span>
+                <span>pages</span>
+                <span>shop</span>
+                <span>blogs</span>
+                <span>docs</span>
+            </nav>
+        </div>
+        <div>
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart"></span>
+        </div>
+    </header>
+    <article><span class="bi bi-lightning-fill"></span> HAPPY HOLIDAY DEALS ON EVERYTHING <span class="bi bi-lightning-fill"></span></article>
+    <main>
+        <div class="women">
+            <div class="title">women</div>
+            <div><button>Shop Women<span class="bi bi-arrow-right"></span></button></div>
+        </div>
+        <div class="men">
+            <div class="title">men</div>
+            <div><button>Shop men<span class="bi bi-arrow-right"></span></button></div>
+        </div>
+        <div class="kids">
+            <div class="title">kids</div>
+            <div><button>Shop kids<span class="bi bi-arrow-right"></span></button></div>
+        </div>
+    </main>
+    <div class="feaatures">
+        <div>
+            <div class="f-title"><span class="bi bi-truck"></span>Free Shipping</div>
+            <div>From all orders over $1000</div>
+        </div>
+        <div>
+            <div class="f-title"><span class="bi bi-arrow-left-right"></span>Free Returns</div>
+            <div>Return money within 30 days</div>
+        </div>
+        <div>
+            <div class="f-title"><span class="bi bi-bag"></span>Secure Shopping</div>
+            <div>You are in safe hands</div>
+        </div>
+        <div>
+            <div class="f-title"><span class="bi bi-tag"></span>Over 10,000 Styles</div>
+            <div>we have everything you need</div>
+        </div>
+    </div>
+    <div class="main-title">
+        <div>
+            <div class="main-title-one" id="Home">NEW COLLECTION</div>
+            <div class="main-title-two">best picks 2023</div>
+            <div class="main-title-three">Appear, dry there darkness they're seas, dry waters thing fly midst. Beast,<br> above fly brought Very green.</div>
+
+        </div>
+
+    </div>
+    <section>
+        <div class="banner-row-1"> 
+            <div class="banner-row-1-left">
+
+            </div>
+            <div class="banner-row-1-right">
+                <div class="offer">30% off</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

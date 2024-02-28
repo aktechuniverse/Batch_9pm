@@ -1,0 +1,19 @@
+img{
+    margin-right: 60px;
+    transition: 2s;
+   }
+   marquee{
+    padding: 110px;
+   }
+   img:hover{
+    transform: scale(2);
+    box-shadow: 3px 3px 2px red;
+    transition:2s;
+    
+   }
+   #Article{
+    margin: 10px;
+   }
+   .mar{
+    
+   }

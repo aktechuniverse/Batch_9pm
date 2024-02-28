@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        nav{
+            width: 200px;
+            border: 2px solid gray;
+            height: 400px;
+            padding: 20px;
+            overflow: auto;
+        }
+        nav div{
+            width: 100px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            margin-left: 10px;
+            transition: 5s;
+        }
+        menu{
+            margin-left: -40px;
+        }
+        nav div:hover{
+            background-color: yellow;
+            color: red;
+            font-size: 25px;
+            cursor: grab;
+            transition: 2s;
+
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div>Home</div>
+        <menu>
+            <details>
+                <summary>fashion</summary>
+                <div>kids</div>
+                <div>woman</div>
+                <div>men</div>
+                <div>trance</div>
+            </details>
+            <details>
+                <summary>fastfood</summary>
+                <div>eggroll</div>
+                <div>eggroll1</div>
+                <div>eggroll2</div>
+                <div>eggroll3</div>
+            </details>
+            <details open>
+                <summary>Mobile</summary>
+                <div>samsung</div>
+                <div>lg</div>
+                <div>Mi</div>
+                <div>nokia</div>
+            </details>
+            <details>
+                <summary> Books </summary>
+                <div>java book</div>
+                <div>python book</div>
+                <div>c book</div>
+                <div>c++ book</div>
+            </details>
+        </menu>
+    </nav>
+</body>
+</html>

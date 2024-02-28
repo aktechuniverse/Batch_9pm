@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            
+        }
+        nav li{
+            border: 1px solid darkgray;
+            background-color: darkslategray;
+            color: white;
+            width: 100px;
+            padding: 5px;
+            margin-left: 30px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .card{
+            width: 200px;
+            box-shadow: 2px 2px 2px gray;
+            padding: 5px;
+            margin: 20px;
+        }
+        
+        .cantainer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .card:target{
+            background-color: darkcyan;
+            color: white;
+            font-size: 25px;
+            width: 350px;
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li ><a href="#Women">Women</a></li>
+            <li ><a href="#Men">men</a></li>
+            <li ><a href="#kids">Kids</a></li>
+
+        </ul>
+    </nav>
+    <div class="cantainer">
+        <div class="card" id="Women">
+            <img src="./images/women.jpg" width="180px" height="150px" >
+            <div class="card-header">
+                <h2>Women</h2>
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>Item-1</li>
+                    <li>Item-2</li>
+                    <li>Item-3</li>
+                    <li>Item-4</li>
+                </ol>
+            </div>
+        </div>
+        <div class="card" id="Men">
+            <img src="./images/men.jpg"  width="180px" height="150px" >
+            <div class="card-header">
+                <h2>Men</h2>
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>Item-1</li>
+                    <li>Item-2</li>
+                    <li>Item-3</li>
+                    <li>Item-4</li>
+                </ol>
+            </div>
+        </div>
+        <div class="card" id="kids">
+            <img src="./images/kisd.jpg"  width="195px" height="165px" >
+            <div class="card-header">
+                <h2>Kids</h2>
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>Item-1</li>
+                    <li>Item-2</li>
+                    <li>Item-3</li>
+                    <li>Item-4</li>
+                </ol>
+            </div>
+        </div>
+        <div class="card" id="Women">
+            <img src="./images/women.jpg" width="180px" height="150px" >
+            <div class="card-header">
+                <h2>Women</h2>
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>Item-1</li>
+                    <li>Item-2</li>
+                    <li>Item-3</li>
+                    <li>Item-4</li>
+                </ol>
+            </div>
+        </div>
+        <div class="card" id="Men">
+            <img src="./images/men.jpg"  width="180px" height="150px" >
+            <div class="card-header">
+                <h2>Men</h2>
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>Item-1</li>
+                    <li>Item-2</li>
+                    <li>Item-3</li>
+                    <li>Item-4</li>
+                </ol>
+            </div>
+        </div>
+        <div class="card" id="kids">
+            <img src="./images/kisd.jpg"  width="195px" height="165px" >
+            <div class="card-header">
+                <h2>Kids</h2>
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>Item-1</li>
+                    <li>Item-2</li>
+                    <li>Item-3</li>
+                    <li>Item-4</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
